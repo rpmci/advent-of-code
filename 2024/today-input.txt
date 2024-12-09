@@ -1,2 +1,0 @@
-Download today's input from the Advent of Code website.
-I right click "get your puzzle input" -> save link as "today-input.txt"
