@@ -20,6 +20,10 @@ def create_day_folder(day_number, template_file="template.py"):
             shutil.copy(template_file, file_path)
             print("Copied template to: {}".format(file_path))
         elif file == "input.txt" and os.path.exists("today-input.txt"):
+            '''
+            Every day I save the input from the Advent of Code website before creating the folder for the day.
+            I right click "get your puzzle input" -> save link as "today-input.txt"
+            '''
             shutil.copy("today-input.txt", file_path)
             print("Copied today's input to: {}".format(file_path))
         else:
