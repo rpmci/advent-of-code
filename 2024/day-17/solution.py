@@ -55,9 +55,6 @@ def part2(lines):
     The program is a single loop, where each iteration divides A // 8
     The values of B, C and output are based on A
     '''
-    # regs, instr = lines.split("\n\n")
-    # instr = [int(x) for x in findall(r"\d+", instr)]
-    # _, reg_b, reg_c = [int(x) for x in findall(r"\d+", regs)]
 
     reg_a, reg_b, reg_c, *instr = map(int, findall(r'\d+',lines))
     n = len(instr)
@@ -80,13 +77,6 @@ def part2(lines):
                 case 7: reg_c = reg_a >> combo[operand]
             i += 2
         return r
-    
-    # def find(reg_a, i):
-    #     if run(reg_a, reg_b, reg_c) == instr: print(reg_a)
-    #     if run(reg_a, reg_b, reg_c) == instr[-i] or not i:
-    #         for k in range(8): find(8*reg_a+k, i+1)
-    
-    # find(0,0)
 
     reg_a = 0
     for i in reversed(range(n)):
