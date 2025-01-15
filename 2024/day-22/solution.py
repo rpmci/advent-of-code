@@ -74,7 +74,7 @@ def main():
         with open('input.txt') as f:
             lines = f.read().splitlines()
             print("---")
-            # print("Part 1 Answer: {}".format(part1(lines)))
+            print("Part 1 Answer: {}".format(part1(lines)))
             if part_two:
                 print("Part 2 Answer: {}".format(part2(lines)))
     print("--- %s seconds ---" % (time.time() - start_time))
